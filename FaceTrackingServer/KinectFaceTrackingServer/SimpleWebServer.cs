@@ -13,7 +13,7 @@ namespace SimpleWebServer
 
         public WebServer(params string[] prefixes)
         {
-            this.Headpose = "no pose recognized";
+            this.Headpose = "Error:no-face,";
             if (!HttpListener.IsSupported)
                 throw new NotSupportedException(
                     "Needs Windows XP SP2, Server 2003 or later.");
