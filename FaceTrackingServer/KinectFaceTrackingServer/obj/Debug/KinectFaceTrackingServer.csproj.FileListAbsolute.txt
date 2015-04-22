@@ -1,0 +1,23 @@
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\bin\Debug\KinectFaceTrackingServer.exe.config
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\bin\Debug\FaceTrackData.dll
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\bin\Debug\FaceTrackLib.dll
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\bin\Debug\KinectFaceTrackingServer.exe
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\bin\Debug\KinectFaceTrackingServer.pdb
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\bin\Debug\Microsoft.Kinect.Toolkit.dll
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\bin\Debug\Microsoft.Kinect.Toolkit.FaceTracking.dll
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\bin\Debug\Microsoft.Kinect.Toolkit.FaceTracking.pdb
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\obj\Debug\KinectFaceTrackingServer.csprojResolveAssemblyReference.cache
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\obj\Debug\MainWindow.baml
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\obj\Debug\MainWindow.g.cs
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\obj\Debug\App.g.cs
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\obj\Debug\KinectFaceTrackingServer_Content.g.cs
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\obj\Debug\KinectFaceTrackingServer_MarkupCompile.cache
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\obj\Debug\KinectFaceTrackingServer.g.resources
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\obj\Debug\KinectFaceTrackingServer.Properties.Resources.resources
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\obj\Debug\KinectFaceTrackingServer.csproj.GenerateResource.Cache
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\obj\Debug\KinectFaceTrackingServer.exe
+c:\users\albin\documents\visual studio 2013\Projects\KinectFaceTrackingServer\KinectFaceTrackingServer\obj\Debug\KinectFaceTrackingServer.pdb
+C:\Users\Albin\Documents\Development\Digital-Vision-Project\FaceTrackingServer\KinectFaceTrackingServer\bin\Debug\KinectFaceTrackingServer.exe.config
+C:\Users\Albin\Documents\Development\Digital-Vision-Project\FaceTrackingServer\KinectFaceTrackingServer\obj\Debug\KinectFaceTrackingServer.exe
+C:\Users\Albin\Documents\Development\Digital-Vision-Project\FaceTrackingServer\KinectFaceTrackingServer\obj\Debug\KinectFaceTrackingServer.pdb

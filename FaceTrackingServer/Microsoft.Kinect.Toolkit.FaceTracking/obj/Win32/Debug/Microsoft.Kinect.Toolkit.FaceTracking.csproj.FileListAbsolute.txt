@@ -1,0 +1,14 @@
+C:\Users\alha0050\Development\Digital Vision\Microsoft.Kinect.Toolkit.FaceTracking\bin\x86\Debug\FaceTrackData.dll
+C:\Users\alha0050\Development\Digital Vision\Microsoft.Kinect.Toolkit.FaceTracking\bin\x86\Debug\FaceTrackLib.dll
+C:\Users\alha0050\Development\Digital Vision\Microsoft.Kinect.Toolkit.FaceTracking\bin\x86\Debug\Microsoft.Kinect.Toolkit.FaceTracking.dll
+C:\Users\alha0050\Development\Digital Vision\Microsoft.Kinect.Toolkit.FaceTracking\bin\x86\Debug\Microsoft.Kinect.Toolkit.FaceTracking.pdb
+C:\Users\alha0050\Development\Digital Vision\Microsoft.Kinect.Toolkit.FaceTracking\obj\Win32\Debug\Microsoft.Kinect.Toolkit.FaceTracking.csprojResolveAssemblyReference.cache
+C:\Users\alha0050\Development\Digital Vision\Microsoft.Kinect.Toolkit.FaceTracking\obj\Win32\Debug\Microsoft.Kinect.Toolkit.FaceTracking.dll
+C:\Users\alha0050\Development\Digital Vision\Microsoft.Kinect.Toolkit.FaceTracking\obj\Win32\Debug\Microsoft.Kinect.Toolkit.FaceTracking.pdb
+C:\Users\Albin\Documents\Visual Studio 2013\Projects\KinectFaceTrackingServer\Microsoft.Kinect.Toolkit.FaceTracking\bin\x86\Debug\FaceTrackData.dll
+C:\Users\Albin\Documents\Visual Studio 2013\Projects\KinectFaceTrackingServer\Microsoft.Kinect.Toolkit.FaceTracking\bin\x86\Debug\FaceTrackLib.dll
+C:\Users\Albin\Documents\Visual Studio 2013\Projects\KinectFaceTrackingServer\Microsoft.Kinect.Toolkit.FaceTracking\bin\x86\Debug\Microsoft.Kinect.Toolkit.FaceTracking.dll
+C:\Users\Albin\Documents\Visual Studio 2013\Projects\KinectFaceTrackingServer\Microsoft.Kinect.Toolkit.FaceTracking\bin\x86\Debug\Microsoft.Kinect.Toolkit.FaceTracking.pdb
+C:\Users\Albin\Documents\Visual Studio 2013\Projects\KinectFaceTrackingServer\Microsoft.Kinect.Toolkit.FaceTracking\obj\Win32\Debug\Microsoft.Kinect.Toolkit.FaceTracking.csprojResolveAssemblyReference.cache
+C:\Users\Albin\Documents\Visual Studio 2013\Projects\KinectFaceTrackingServer\Microsoft.Kinect.Toolkit.FaceTracking\obj\Win32\Debug\Microsoft.Kinect.Toolkit.FaceTracking.dll
+C:\Users\Albin\Documents\Visual Studio 2013\Projects\KinectFaceTrackingServer\Microsoft.Kinect.Toolkit.FaceTracking\obj\Win32\Debug\Microsoft.Kinect.Toolkit.FaceTracking.pdb
