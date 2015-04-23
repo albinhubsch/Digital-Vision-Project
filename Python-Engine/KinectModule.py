@@ -4,16 +4,13 @@
 DOCSTRING
 """
 
+# Imports
+import requests
+
 class HeadPose(object):
 	"""Description of object goes here
-
-		Args:
-			n: Argument description
-		Returns:
-			Description of the return value
-		Raises:
-			Exception: Description of the exception that can be raised
 	"""
+
 	def __init__(self, hp_string):
 		"""Constructor of a headpose datatype
 
@@ -41,6 +38,44 @@ class HeadPose(object):
 				self.Yaw = self.Y
 				self.Roll = self.Z
 
-			print self.X
 		except Exception, e:
 			raise ValueError
+
+
+class KinectConnection(object):
+	"""Description
+	"""
+
+	def __init__(self, url):
+		"""Constructor of a KinectConnection
+
+			Args:
+				url: The url to get the data from
+			Returns:
+				Returns a new server connection
+			Raises:
+				-
+		"""
+		super(KinectConnection, self).__init__()
+		self.url = url
+
+		try:
+			r = requests.get(self.url)
+		except Exception, e:
+			print 'Could not create connection to the given adress'
+			return False
+
+	def fetch(self):
+		"""fetch returns latest raw data string from the running Kinect server
+		"""
+		try:
+			r = requests.get(self.url)
+			return str(r.text)
+		except Exception, e:
+			print e
+			return False
+
+	def getPose(self):
+		"""getPose returns a HeadPose struct with the latest pose from kincet server
+		"""
+		return HeadPose(self.fetch())

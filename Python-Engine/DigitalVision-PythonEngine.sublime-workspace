@@ -1,0 +1,1115 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"depth",
+				"depthCanny"
+			],
+			[
+				"dept",
+				"depthCanny"
+			],
+			[
+				"de",
+				"depth"
+			],
+			[
+				"hand",
+				"hand_decoded"
+			],
+			[
+				"pre",
+				"precision"
+			],
+			[
+				"x",
+				"xrange"
+			],
+			[
+				"examen",
+				"examen_kurser"
+			],
+			[
+				"selected",
+				"selected_courses"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"tag",
+				"tag_courses"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ove",
+				"overflow"
+			],
+			[
+				"y",
+				"y_axel"
+			],
+			[
+				"pri",
+				"printf"
+			],
+			[
+				"pritn",
+				"println"
+			],
+			[
+				"print",
+				"println"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"data",
+				"data_str"
+			],
+			[
+				"biggets",
+				"biggest_title"
+			],
+			[
+				"bigget",
+				"biggest_title"
+			],
+			[
+				"biggest",
+				"biggest_title"
+			],
+			[
+				"bigge",
+				"biggest_num"
+			],
+			[
+				"total",
+				"total_duration"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"loo",
+				"loops"
+			],
+			[
+				"json",
+				"json_a"
+			],
+			[
+				"in",
+				"inData"
+			],
+			[
+				"state",
+				"stateStanding"
+			],
+			[
+				"start",
+				"startUpSequence"
+			],
+			[
+				"set",
+				"setStripColor"
+			],
+			[
+				"LED",
+				"LED_COUNT"
+			],
+			[
+				"S",
+				"SHORTNAMES"
+			],
+			[
+				"color",
+				"color"
+			],
+			[
+				"A",
+				"APIController"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"token",
+				"token_type"
+			],
+			[
+				"access",
+				"access_token"
+			],
+			[
+				"Auth",
+				"AuthenticationController"
+			],
+			[
+				"show",
+				"showIndex"
+			],
+			[
+				"margn",
+				"margin-left"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"old",
+				"oldML"
+			],
+			[
+				"path",
+				"pathStripped"
+			],
+			[
+				"arg",
+				"margin-left"
+			],
+			[
+				"marin",
+				"margin-top"
+			],
+			[
+				"wdi",
+				"width"
+			],
+			[
+				"repe",
+				"repeat-x"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"margion",
+				"margin-bottom"
+			],
+			[
+				"api",
+				"api_pass"
+			],
+			[
+				"subs",
+				"subscription_number"
+			],
+			[
+				"backgr",
+				"background-position"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"sub",
+				"subscriber"
+			],
+			[
+				"zip",
+				"zip_code"
+			],
+			[
+				"name",
+				"nameJson"
+			],
+			[
+				"departe",
+				"department"
+			],
+			[
+				"child",
+				"child_id"
+			],
+			[
+				"Absen",
+				"absences"
+			],
+			[
+				"abse",
+				"absence"
+			],
+			[
+				"absen",
+				"absence"
+			],
+			[
+				"from",
+				"fromDate"
+			],
+			[
+				"inserte",
+				"inserted_schools"
+			],
+			[
+				"depa",
+				"departmentId"
+			],
+			[
+				"sch",
+				"schoolId"
+			],
+			[
+				"ab",
+				"Absences"
+			],
+			[
+				"chid",
+				"child"
+			],
+			[
+				"try",
+				"try	Try/Except"
+			],
+			[
+				"Child",
+				"ChildDepartment"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"rad",
+				"rand_food"
+			],
+			[
+				"rand",
+				"rand_food"
+			],
+			[
+				"foo",
+				"foodList"
+			],
+			[
+				"get",
+				"getDate"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"close",
+				"closeMenu"
+			],
+			[
+				"open",
+				"openMenu"
+			],
+			[
+				"clos",
+				"closeMenu"
+			],
+			[
+				"VI",
+				"ViewModule"
+			],
+			[
+				"fave",
+				"faveActive"
+			],
+			[
+				"fav",
+				"favoriteActive"
+			],
+			[
+				"favorite",
+				"favoriteActive"
+			],
+			[
+				"resat",
+				"restaurant_id"
+			],
+			[
+				"sort",
+				"sortByRestaurantName"
+			],
+			[
+				"sett",
+				"settings"
+			],
+			[
+				"init",
+				"initiateMyFavorites"
+			],
+			[
+				"Fav",
+				"FavoriteModule"
+			],
+			[
+				"str",
+				"stringify"
+			],
+			[
+				"utf8",
+				"utf8_encode"
+			],
+			[
+				"pro",
+				"property"
+			],
+			[
+				"listst",
+				"list-style"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"new",
+				"newName"
+			],
+			[
+				"sear",
+				"search_str"
+			],
+			[
+				"searc",
+				"searchRes"
+			],
+			[
+				"search",
+				"search_str"
+			],
+			[
+				"ext",
+				"ext_restaurant"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"height",
+				"heightContent"
+			],
+			[
+				"Main",
+				"MainMenuModule"
+			],
+			[
+				"Data",
+				"DataLoaderModule"
+			],
+			[
+				"Day",
+				"DayMenuModule"
+			],
+			[
+				"scroll",
+				"scrollWWD"
+			],
+			[
+				"import",
+				"important"
+			],
+			[
+				"scro",
+				"scrollTop"
+			],
+			[
+				"Fro",
+				"Form"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "inde",
+		"selected_items":
+		[
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"new",
+				"File: New View into File"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"set c",
+				"Set Syntax: C"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"conve",
+				"Convert Case: Upper Case"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"set ard",
+				"Set Syntax: Arduino"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"indent tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"set pytho",
+				"Set Syntax: Python"
+			],
+			[
+				"set php",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"mini",
+				"Minify Javascript to file"
+			],
+			[
+				"min",
+				"Minify Javascript to file"
+			],
+			[
+				"mni",
+				"Minify Javascript to file"
+			],
+			[
+				"miini",
+				"Minify Javascript"
+			],
+			[
+				"newf ie",
+				"File: New File Relative to Current View"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"new file",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"package",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"redin",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"set bla",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"set blade",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"set css",
+				"Set Syntax: CSS"
+			],
+			[
+				"set",
+				"Set Syntax: LESS"
+			]
+		],
+		"width": 475.0
+	},
+	"console":
+	{
+		"height": 350.0,
+		"history":
+		[
+			"view.insert(none, 0, \"Hello, World!\")",
+			"view.insert(null, 0, \"Hello, World!\")",
+			"view.insert(edit, 0, \"Hello, World!\")",
+			"print 'hej'",
+			"print ''+snus ",
+			"print ''+snus",
+			"print snus;",
+			"print snus",
+			"snus = kalleballe*2",
+			"kalleballe = 12",
+			"view.run_command(\"hello world\")",
+			"view.run_command(\"example\")",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/albin/Development/Digital-Vision-Project/Python-Engine"
+	],
+	"file_history":
+	[
+		"/Users/albin/Development/InteraktionDesign_courses/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/Empty_.php",
+		"/Users/albin/Development/InteraktionDesign_courses/resources/views/app.blade.php",
+		"/Users/albin/Development/InteraktionDesign_courses/public/css/overlay/coursesOverview.less",
+		"/Users/albin/Development/InteraktionDesign_courses/vendor/autoload.php",
+		"/Users/albin/Development/InteraktionDesign_courses/public/css/overlay/singleCoursePage.less",
+		"/Users/albin/Development/InteraktionDesign_courses/composer.lock",
+		"/Users/albin/Development/InteraktionDesign_courses/resources/views/course.blade.php",
+		"/Users/albin/Development/InteraktionDesign_courses/resources/views/courses.blade.php",
+		"/Users/albin/Development/InteraktionDesign_courses/composer.json",
+		"/Users/albin/Development/InteraktionDesign_courses/storage/framework/compiled.php",
+		"/Users/albin/Development/InteraktionDesign_courses/Sublime_files/InteraktionDesign_courses.sublime-project",
+		"/Users/albin/Development/InteraktionDesign_courses/app/Http/Controllers/CoursesController.php",
+		"/Users/albin/Development/InteraktionDesign_courses/resources/views/addTagConn.blade.php",
+		"/Users/albin/Development/InteraktionDesign_courses/database/migrations/2015_03_13_205440_CreateTagsCoursesTable.php",
+		"/Users/albin/Development/InteraktionDesign_courses/database/migrations/2015_03_06_221824_CreateTagTable.php",
+		"/Users/albin/Development/InteraktionDesign_courses/database/migrations/2015_03_06_204942_FixReviewTable.php",
+		"/Users/albin/Development/InteraktionDesign_courses/config/app.php",
+		"/Users/albin/Development/InteraktionDesign_courses/bootstrap/app.php",
+		"/Users/albin/Development/InteraktionDesign_courses/vendor/composer/autoload_psr4.php",
+		"/Users/albin/Development/InteraktionDesign_courses/artisan",
+		"/Users/albin/Development/InteraktionDesign_courses/tests/ExampleTest.php",
+		"/Users/albin/Development/InteraktionDesign_courses/app/Events/Event.php",
+		"/Users/albin/Development/InteraktionDesign_courses/public/css/overlay/overlay.less",
+		"/Users/albin/Development/InteraktionDesign_courses/resources/views/welcome.blade.php",
+		"/Users/albin/Development/InteraktionDesign_courses/public/font-awesome/less/fixed-width.less",
+		"/Users/albin/Development/InteraktionDesign_courses/vendor/phpunit/phpunit/tests/TextUI/failure-isolation.phpt",
+		"/Users/albin/Development/InteraktionDesign_courses/config/filesystems.php",
+		"/Users/albin/Development/InteraktionDesign_courses/app/Course.php",
+		"/Users/albin/Development/InteraktionDesign_courses/resources/assets/less/bootstrap/responsive-embed.less",
+		"/Users/albin/Development/InteraktionDesign_courses/public/css/overlay/frontpage.less",
+		"/Users/albin/Development/InteraktionDesign_courses/app/Http/Controllers/HomeController.php",
+		"/Users/albin/Development/InteraktionDesign_courses/config/view.php",
+		"/Users/albin/Development/InteraktionDesign_courses/vendor/symfony/finder/Symfony/Component/Finder/Expression/ValueInterface.php",
+		"/Users/albin/Development/InteraktionDesign_courses/readme.md",
+		"/Users/albin/Development/LarvNET/README",
+		"/Users/albin/Development/InteraktionDesign_courses/resources/views/home.blade.php",
+		"/Users/albin/Development/InteraktionDesign_courses/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php",
+		"/Users/albin/Development/InteraktionDesign_courses/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOne.php",
+		"/Users/albin/Development/InteraktionDesign_courses/app/Exceptions/Handler.php",
+		"/Users/albin/Development/InteraktionDesign_courses/database/migrations/2015_02_27_204424_create_courses_table.php",
+		"/Users/albin/Development/InteraktionDesign_courses/public/css/overlay/overlay.css",
+		"/Users/albin/Development/InteraktionDesign_courses/public/css/overlay.css",
+		"/Users/albin/Development/InteraktionDesign_courses/public/css/app.css",
+		"/Users/albin/Development/InteraktionDesign_courses/database/migrations/2015_02_27_210926_create_reviews_table.php",
+		"/Users/albin/Development/InteraktionDesign_courses/database/migrations/2015_02_27_211712_create_review_course_table.php",
+		"/Users/albin/Development/InteraktionDesign_courses/app/Review.php",
+		"/Users/albin/Development/InteraktionDesign_courses/database/migrations/2015_02_27_204803_CreateCourseTable.php",
+		"/Users/albin/Development/InteraktionDesign_courses/vendor/danielstjules/stringy/src/Create.php",
+		"/Users/albin/Development/InteraktionDesign_courses/vendor/mtdowling/cron-expression/src/Cron/CronExpression.php",
+		"/Users/albin/Development/InteraktionDesign_courses/vendor/laravel/framework/src/Illuminate/Auth/Passwords/CanResetPassword.php",
+		"/Users/albin/Development/InteraktionDesign_courses/storage/database.sqlite",
+		"/Users/albin/Development/InteraktionDesign_courses/database/seeds/DatabaseSeeder.php",
+		"/Users/albin/Development/InteraktionDesign_courses/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/definition_astext.txt",
+		"/Users/albin/Development/InteraktionDesign_courses/config/database.php",
+		"/Users/albin/Development/InteraktionDesign_courses/app/Providers/RouteServiceProvider.php",
+		"/Users/albin/Development/InteraktionDesign_courses/app/Http/routes.php",
+		"/Users/albin/Development/InteraktionDesign_courses/public/robots.txt",
+		"/Users/albin/Dropbox/Backup/MAMP 2014-02-18/kristall/vendor/doctrine/common/tests/Doctrine/Tests/Common/Proxy/SleepClass.php",
+		"/Users/albin/Development/Emergent Systems/Lab1/Termites_olika.nlogo",
+		"/Users/albin/Development/Emergent Systems/Lab1/Termites.nlogo",
+		"/Users/albin/Downloads/Finder Icon by Arvid Bräne/Read Me - For Private Use Only.md",
+		"/Users/albin/Development/Emergent Systems/Lab1/README",
+		"/Users/albin/Dropbox/CS2024/asm-studio/production/12-html-pages/index_backup.html",
+		"/Users/albin/Dropbox/CS2024/asm-studio/production/12-html-pages/index.html",
+		"/Users/albin/Desktop/t.py",
+		"/Users/albin/Dropbox/CS2024/asm-studio/production/12-html-pages/index.mini.html",
+		"/Users/albin/Dropbox/CS2024/asm-studio/production/12-html-pages/privacy-policy.html",
+		"/Users/albin/Dropbox/CS2024/asm-studio/production/12-html-pages/css/_cssmaster.css",
+		"/Users/albin/Development/lucy-light/python-shield/setup_mac.py",
+		"/Users/albin/Google Drive/Universitetsstudier/NTU/DM3005 - Interactive Devices/other assignments/albinhubsch.tumblr.com",
+		"/Users/albin/Development/lucy-light/python-shield/Moves.py",
+		"/Users/albin/Development/lucy-light/python-shield/net-shield.py",
+		"/Users/albin/Development/lucy-light/python-shield/DataProcessor.py",
+		"/Users/albin/Development/lucy-light/php-mover/db2.txt",
+		"/Users/albin/Development/lucy-light/php-mover/index.php",
+		"/Users/albin/Development/lucy-light/php-mover/db.txt",
+		"/Users/albin/Development/lucy-light/python-shield/Comm.py",
+		"/Users/albin/Development/lucy-light/python-shield/t.py",
+		"/Users/albin/Development/lucy-light/lucy_light_runner/lucy_light_runner.ino",
+		"/Users/albin/Development/lucy-light/arduino-runner/lucy_light_runner.ino",
+		"/Users/albin/Development/lucy-light/arduino-runner/lucy_light_runner/lucy_light_runner.ino",
+		"/Users/albin/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/albin/Development/lucy-light/arduino-runner/arduino-runner.ino",
+		"/Users/albin/Development/lucy-light/README.md",
+		"/Users/albin/Development/lucy-light/python-shield/.access_token",
+		"/Applications/MAMP/htdocs/lucy-light/app/controllers/APIController.php",
+		"/Applications/MAMP/htdocs/lucy-light/app/config/access_token.txt",
+		"/Applications/MAMP/htdocs/lucy-light/app/controllers/UserController.php",
+		"/Applications/MAMP/htdocs/lucy-light/app/models/User.php",
+		"/Applications/MAMP/htdocs/lucy-light/app/views/lucy_auth/start.blade.php",
+		"/Applications/MAMP/htdocs/lucy-light/app/database/migrations/2014_09_11_021236_create_users_table.php",
+		"/Applications/MAMP/htdocs/lucy-light/app/database/seeds/DatabaseSeeder.php",
+		"/Applications/MAMP/htdocs/lucy-light/app/database/seeds/UserTableSeed",
+		"/Applications/MAMP/htdocs/lucy-light/app/models/Moves.php",
+		"/Applications/MAMP/htdocs/lucy-light/app/views/authentication/start.blade.php",
+		"/Applications/MAMP/htdocs/lucy-light/app/config/database.php",
+		"/Applications/MAMP/htdocs/lucy-light/.gitignore",
+		"/Applications/MAMP/htdocs/lucy-light/Procfile",
+		"/Applications/MAMP/htdocs/lucy-light/vendor/patchwork/utf8/class/Normalizer.php",
+		"/Applications/MAMP/htdocs/lucy-light/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/NotEqual.php",
+		"/Applications/MAMP/htdocs/lucy-light/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/New.php",
+		"/Applications/MAMP/htdocs/lucy-light/app/controllers/HomeController.php",
+		"/Applications/MAMP/htdocs/lucy-light/app/views/home",
+		"/Applications/MAMP/htdocs/lucy-light/app/views/hello.php",
+		"/Applications/MAMP/htdocs/lucy-light/app/controllers/AuthenticationController.php",
+		"/Users/albin/Library/Application Support/Sublime Text 3/Packages/CodeTL2/CodeTL2.sublime-settings",
+		"/Applications/MAMP/htdocs/lucy-light/app/config/app.php",
+		"/Applications/Sublime Text.app/Contents/MacOS/changelog.txt",
+		"/Applications/MAMP/htdocs/limesaudio/limesaudio.com/js/base.min.js",
+		"/Applications/MAMP/htdocs/limesaudio/limesaudio.com/js/jquery-1.10.2.min.js",
+		"/Applications/MAMP/htdocs/limesaudio/limesaudio.com/js/fastclick.js",
+		"/Applications/MAMP/htdocs/limesaudio/limesaudio.com/js/fastclick.min.js",
+		"/Applications/MAMP/htdocs/limesaudio/limesFrame/app/views/whatwedo.blade.php",
+		"/Applications/MAMP/htdocs/limesaudio/limesFrame/app/views/referencedesign.blade.php",
+		"/Applications/MAMP/htdocs/limesaudio/limesaudio.com/style/less/classes.less",
+		"/Applications/MAMP/htdocs/instafood/public/style/less/base.less",
+		"/Applications/MAMP/htdocs/limesaudio/__timelogs/Albin Hubsch/timelog.json",
+		"/Applications/MAMP/htdocs/limesaudio/limesaudio.com/style/less/footer.less",
+		"/Applications/MAMP/htdocs/limesaudio/möte_25apr_2014.txt",
+		"/Applications/MAMP/htdocs/limesaudio/möte_25apr_2014.txt",
+		"/Users/albin/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Applications/MAMP/htdocs/limesaudio/limesFrame/vendor/swiftmailer/swiftmailer/test-suite/lib/simpletest/test/site/base_tag/frameset_with_base_tag.html",
+		"/Applications/MAMP/htdocs/limesaudio/limesFrame/vendor/nikic/php-parser/lib/PHPParser/BuilderAbstract.php",
+		"/Applications/MAMP/htdocs/limesaudio/limesaudio.com/js/base.js",
+		"/Applications/MAMP/htdocs/limesaudio/limesFrame/app/views/incl/nav.blade.php",
+		"/Applications/MAMP/htdocs/limesaudio/limesFrame/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/NotEqual.php",
+		"/Applications/MAMP/htdocs/limesaudio/limesFrame/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/New.php",
+		"/Applications/MAMP/htdocs/limesaudio/limesFrame/vendor/monolog/monolog/tests/Monolog/Handler/NewRelicHandlerTest.php"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 115.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"img",
+			"sKey",
+			"Datum",
+			"F",
+			"''",
+			"credits",
+			"nam",
+			"lists('name', 'id')",
+			"fria",
+			"class=\"form-control",
+			"form-control",
+			" ",
+			"d",
+			"-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14);\n	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14);",
+			"3",
+			" ",
+			"min",
+			"max",
+			"l",
+			"fortsätt",
+			"list1",
+			"list2",
+			"#",
+			"flex-next",
+			".flex-direction-nav a",
+			"#subbody .flex-direction-nav a, .light-menu #subbody .nvrtrotating .flex-direction-nav a",
+			"./Flip Fullscreen Slider   Just another Novaro Wordpress Demo Sites site_files/interfeisstudio-220x104.png",
+			"Flip Fullscreen Slider   Just another Novaro Wordpress Demo Sites site_files/novarostudio-220x104.png",
+			"http://wordpress.novarostudio.com/flip/#",
+			"28",
+			"pricing",
+			"POJECTS",
+			"stateStanding",
+			"int ",
+			"MAXBRIGHTNESS",
+			"person_a",
+			"10",
+			"100",
+			"state",
+			"sensor",
+			"white",
+			"next_val",
+			"ne",
+			"format",
+			"20",
+			"69",
+			"14",
+			"40",
+			"fastclick",
+			"initTech",
+			"0s",
+			"nav",
+			"div",
+			"20",
+			"button",
+			".roboto(13px) !important;",
+			"#ABOUT",
+			"$.",
+			"90deg",
+			"getBasicResponse",
+			"firstname",
+			"snuva",
+			"hosta",
+			"diarr",
+			"[\n",
+			"ödem",
+			"feber",
+			".*\\n",
+			"aarskogs syndrom\nabrikosoffs tumör\nakne\nadd\nadhd\naddisons sjukdom\naddison-schilders syndrom\nadipositas, fetma\nafasi, dysfasi\nafte\naids\nakromegali\nalbert-schönbergs sjukdom\nallergi\nalports syndrom\nals\nalkoholism\nalzheimers sjukdom\nanafylaxi\nanemi\nangelmans syndrom\nanorexia nervosa\nartäremboli\narterostenos\nashermans syndrom\naspergers_syndrom|aspergers syndrom\nastma\nayerzas sjukdom\nbaastrups syndrom\nbakwin-kridas syndrom\nbalints syndrom\nbangs sjukdom\nbarlows sjukdom\nbarnsängsfeber\nbasedows sjukdom\nbechterews sjukdom\nbehçets syndrom\nbenhinneinflammation\nbergers sjukdom\nansiktsförlamning|bells pares\nbiid\nbihåleinflammation\nbipolärt syndrom\nblindtarmsinflammation\nblodförgiftning\nblödarsjuka\nborderline\nborrelia\nbowens sjukdom\nbpd\nbrills sjukdom\nbronkit\nbråck\nbukhinneinflammation\nbulimia nervosa\nbuergers sjukdom\nbältros\nböldpest\ncancer\ncapgras syndrom\nchagas sjukdom\ncharcot-marie-tooths sjukdom\nchurg-strauss syndrom\nclaudicatio intermittens, fönstertittarsjuka \ncogans syndrom\ncoopers sjukdom\ncreutzfeldt-jakobs sjukdom\ncrohns sjukdom\ncushings sjukdom\ncystisk fibros\ndanssjuka\ndenguefeber\ndepression\ndiabetes\ndiamond-blackfans syndrom\ndissekerande aortaaneurysm\ndivertikulit\nduchennes muskeldystrofi\ndykarsjukan\ndyskalkyli\ndysmeli\ndysmorfofobi\ndystymi\nedwards syndrom\nehlers danlos syndrom\neksem\nelefantsjukan\nelöverkänslighet\nendoftalmit\nepilepsi\nfabrys sjukdom\nfalsk krupp\nfamiljär medelhavsfeber\nfaryngit\nfavism\nfeber\nfemte sjukan elerythema infectiosum\nfetma, adipositas\nfibrom\nfibros\nfibrosarkom\nfibrositis\nfilariasjuka\nfjärde sjukdomen\nflebit\nflykten (sjukdom)|flykten\nfläcktandsjuka\nfläcktyfus\nfotsvamp\nframboesi\nfriedreichs sjukdom\nfröhlichs syndrom\nftiriasis\nfulslag\nfxtas\nfågelinfluensa\nföllings sjukdom\nförhudsinflammation\nförkylning\ngallblåseinflammation\ngallvägsdyskinesi\ngangrän, kallbrand\ngapsjuka\ngargoylism\ngasbrand\ngastrit\ngastro-enterit\ngauchers sjukdom\ngee-herters sjukdom\ngelbgjutarfeber\ngiftstruma\ngikt\ngilbert-meulengrachts syndrom\ngilberts syndrom\ngingivit\nglassliparsjuka\nglaukom\nglimo\nglomerulonefrit\nglossit\nglottisödem\ngnejs (hudåkomma)|gnejs\ngonit\ngonorré\ngrå starr\ngrön starr\nguillain-barrés syndrom\ngula febern\ngulsot\nhaemoloacria\nhallucinogen persisting perception disorder\nhemokromatos\nhench-assmans syndrom\nhepatit|hepatit a\nhepatit|hepatit b\nhepatit|hepatit c\nherpes\nherpes b\nherpes simplex\nhiv\nhjärnhinneinflammation\nhudtuberkulos\nhuntinel-picks syndrom\nhuvudvärk\nhydrocefalus\nhypersomni\nhyperthyreos\nhypertoni \nhypertrikos\nhypokondri\nhypoglykemi\niga-nefrit\nimerslund-gräsbecks syndrom\ninfluensa\nirit\nsömnlöshet|insomnia\njohanssons sjukdom\nkahlers sjukdom\nkallbrand, gangrän\nkaries\nkawasakis sjukdom\nkemiskt beroende \nkeratomalaci\nkikhosta\nklamydiainfektion\nklinefelters syndrom\nkol\nkolera\nkondylom\nkorsakoffs sjukdom\nkretinism\nkwashiorkor\nkärlkramp\nkörtelfeber\nkrabbes sjukdom\nlaurence-moon-biedls syndrom\nledgångsreumatism\nlegionärssjuka\nlepra\nlymphogranuloma venereum (lgv)\nlungemboli\nlungemfysem\nlunginflammation\nlungkatarr\nlungpest\nlungsot\nlungsäcksinflammation\nlungödem\nlångt qt-syndrom\nmagkatarr\nmagsjuka\nmalaria\nmani_(beteende)|mani\nmarfans syndrom\nmarie-strümpells sjukdom\nménières sjukdom\nmikulicz sjukdom\nmiller-fischer\nminimal change disease\nmjuk schanker\nmjältbrand\nmongolism\nmortons sjukdom\nmrkh\nmultipel sklerosmultipel skleros|ms)\nmyokardit\nmyxom\nmyxödem\nmünchhausensyndrom\nmässling\nnageltrång\nnarcissistisk personlighetsstörning\nnarkolepsi\nnefrit\nnicolas-favres sjukdom\nniemann-picks sjukdom\nnikotinism\nnjursten\nnjursvikt\nosgood-schlatters sjukdom\noslers sjukdom\nondines syndrom\nosteogenesis imperfecta  \nortorexi\nparanoia\npanikångest\npataus syndrom\npapegojsjuka\nparkinsons sjukdom\nparotit\nparry-rombergs syndrom\npectus carinatum\npectus excavatum\npellagra\npest\npicks sjukdom\npick-herxheimers sjukdom\npick-wernickes syndrom\nplummer-winsons syndrom\npoland-möbius syndrom\npolio\npollenallergi\npolyradikulit\npolykondrit \nposadas-wernickes sjukdom\npozzis syndrom\nprader-willis syndrom\npreisers sjukdom\nproteus syndrom\nprimär aldosteronism \nprinzmetal-massumis syndrom\nprionsjukdomar \nprogeri\npsoriasis\npyle-cohns syndrom\npyles sjukdom\npåssjuka\nrabies\nrakitis\nrastlösa ben\nraynauds sjukdom\nneurofibromatos | recklinghausens sjukdom\nregnbågshinneinflammation\nretinitis pigmentosa\nreumatisk feber\nriedels struma\nrop\nryggskott\nröda hund\nsalmonella\nsars\nscharlakansfeber\nschlatters sjukdom\nscheuermanns sjukdom\nschilders sjukdom\nschilder-foix sjukdom\nschilder-stengels syndrom\nschizofreni\nsensorisk hyperreaktivitet\nsézarys syndrom\nsimmonds sjukdom\nsjögrens syndrom  \nskabb\nsklerodermi\nskleros\nskolios\nskäggsvamp\nskörbjugg\nslaganfall\nsmittkoppor\nsnäckfeber\nsorkfeber\nspanska sjukan\nspleen\nstarr\nstelkramp\nstendhal syndrom\nsternbergs sjukdom\nstevens-johnson syndrom\nstills sjukdom\nstruma\nstrupkatarr\nsturge-webers sjukdom\nsvampinfektion\nsvininfluensa\nsyfilis\ntakayashus sjukdom\ntarmkatarr\ntarmvred\ntay-sachs sjukdom\ntbe\ntennisarmbåge\ntetani\nthiemanns sjukdom\nthomsens sjukdom\ntinnitus\ntooths sjukdom\ntoxiskt chocksyndrom, tss\ntreacher collins syndrom\ntrichomonas\ntromboembolism\ntromboflebit\ntuberkulos, tbc\nturners syndrom\ntvångssyndrom\ntyfus\nuhls sjukdom\nulcerös kolit\nulcus cruris\nulcus pepticum\nulcus simplex\nulcus ventriculi\nunverricht-lundborgs sjukdom\nurinvägsinfektion\nvaquez-oslers sjukdom\nvattkoppor\nvinterkräksjuka\nvirus\nwaterhouse-friedrichens syndrom\nwdha-syndrom\nwebers syndrom\nweber-christians sjukdom\nweils sjukdom\nwelanders muskeldystrofi\nwernicke-korsakoffs syndrom\nwest nile fever\nwillebrands sjukdom\nwilliams syndrom\nwilsons sjukdom\nxeroftalmi\nyrsel\nzellwegers syndrom\nzollinger-ellisons syndrom\nåderbråck\nåderförkalkning\näkta krubb\nätstörning utan närmare specifikation\nöroninflammation\nödem",
+			"allergi",
+			"aarskogs",
+			"]]",
+			"[[",
+			"Pojknamn",
+			"id\": 1,",
+			"en_from",
+			"''",
+			"None",
+			"Chil",
+			"Child",
+			"db",
+			"finalTmpHTML",
+			"content",
+			"0",
+			"clearCanvas",
+			"menu-sprite",
+			"currentView",
+			"oldName",
+			"-->\n",
+			"67",
+			"		\n",
+			"section",
+			"h2",
+			"line-height: 150%;",
+			"line-height: 130%;",
+			"line-height",
+			"1",
+			"key"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.arduino-runner":
+	{
+		"height": 110.0
+	},
+	"output.exec":
+	{
+		"height": 458.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.lucy_light_runner":
+	{
+		"height": 110.0
+	},
+	"output.stino_log":
+	{
+		"height": 110.0
+	},
+	"pinned_build_system": "",
+	"project": "DigitalVision-PythonEngine.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"app",
+				"resources/views/app.blade.php"
+			],
+			[
+				"courses",
+				"resources/views/courses.blade.php"
+			],
+			[
+				"base",
+				"public/js/base.js"
+			],
+			[
+				"compile",
+				"storage/framework/compiled.php"
+			],
+			[
+				"compo",
+				"composer.lock"
+			],
+			[
+				"course",
+				"app/Course.php"
+			],
+			[
+				"",
+				"composer.json"
+			],
+			[
+				"examen",
+				"resources/views/examenform.blade.php"
+			],
+			[
+				"fixrev",
+				"database/migrations/2015_03_06_204942_FixReviewTable.php"
+			],
+			[
+				"review",
+				"app/Review.php"
+			],
+			[
+				"homecontro",
+				"app/Http/Controllers/HomeController.php"
+			],
+			[
+				"routes.php",
+				"app/Http/routes.php"
+			],
+			[
+				"base.less",
+				"limesaudio.com/style/less/base.less"
+			],
+			[
+				"base.js",
+				"limesaudio.com/js/base.js"
+			],
+			[
+				"interaf",
+				"app/controllers/InterfaceController.php"
+			],
+			[
+				"master",
+				"app/views/layouts/master.blade.php"
+			],
+			[
+				"filter",
+				"app/filters.php"
+			],
+			[
+				"route",
+				"app/routes.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Development/InteraktionDesign_courses/Sublime_files/InteraktionDesign_courses.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 324.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
