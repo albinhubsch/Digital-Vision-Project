@@ -5,7 +5,7 @@ DOCSTRING
 """
 from KinectModule import HeadPose
 from KinectModule import KinectConnection
-from ControlRoom import *
+from BroadcastEnvironment import *
 
 import cv2
 import numpy as np
