@@ -25,11 +25,6 @@ class Studio(object):
 		"""
 		self.cameras.append(camera)
 
-	def cameras(self):
-		"""Returns a list with all cameras in the studio
-		"""
-		return self.cameras
-
 	def newscaster(self):
 		"""
 		"""
@@ -58,6 +53,9 @@ class ControlRoom(object):
 	def linkStudio(self, studio):
 		self.studio = studio
 
+	def studio(self):
+		return self.studio
+
 	def startCameras(self):
 		"""Start all cameras in the studio"""
 		for camera in self.studio.cameras:
@@ -72,7 +70,7 @@ class ControlRoom(object):
 class Camera(object):
 	"""docstring for Camera
 	"""
-	def __init__(self, cameraID, position):
+	def __init__(self, cameraID, position = None):
 		"""Constructor creating a new camera object
 
 			Args:
@@ -100,10 +98,6 @@ class Camera(object):
 			return True
 		except Exception, e:
 			return False
-
-	def getPosition(self):
-		"""Returns this cameras position"""
-		return self.position
 
 	def setPosition(self, position):
 		"""Set the position of this camera"""
@@ -155,7 +149,7 @@ class Newscaster(object):
 		self.headpose = None
 		self.kinectConn = KinectConnection(url)
 		
-	def headpose(self):
+	def getHeadpose(self):
 		"""
 		"""
 		return self.setHeadpose(self.kinectConn.getPose())
