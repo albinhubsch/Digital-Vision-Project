@@ -5,6 +5,7 @@ DOCSTRING
 """
 
 import cv2
+import json
 from KinectModule import HeadPose
 from KinectModule import KinectConnection
 
@@ -86,6 +87,13 @@ class Camera(object):
 		self.cameraID = cameraID
 		self.position = position
 		self.capObj = None
+
+	def toString(self):
+		""" Returns stringification of the camera object """
+		return str({"id": self.cameraID, "position": str(self.position)})
+
+	def getJsonObj(self):
+		return {"id": self.cameraID, "position": self.position.getStruct()}
 
 	def start(self):
 		"""Start this camera for capturing frames

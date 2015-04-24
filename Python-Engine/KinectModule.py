@@ -6,12 +6,11 @@ DOCSTRING
 
 # Imports
 import requests
+import json
 
 class HeadPose(object):
 	"""Description of object goes here
 	"""
-
-
 
 	def __init__(self, hp_string = None, X = None, Y = None, Z = None):
 		"""Constructor of a headpose datatype
@@ -48,6 +47,12 @@ class HeadPose(object):
 		self.Pitch = self.X
 		self.Yaw = self.Y
 		self.Roll = self.Z
+
+	def __str__(self):
+		return 'X:'+str(self.X)+',Y:'+str(self.Y)+',Z:'+str(self.Z)
+
+	def getStruct(self):
+		return {'X': self.Pitch, 'Y': self.Yaw, 'Z': self.Roll}
 
 class KinectConnection(object):
 	"""Description

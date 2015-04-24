@@ -22,6 +22,7 @@ def main():
 			Exception: Description of the exception that can be raised
 	"""
 
+	# Run setup
 	e = Setup()
 
 	# n = HeadPose("X:20,Y:10,Z:32");
