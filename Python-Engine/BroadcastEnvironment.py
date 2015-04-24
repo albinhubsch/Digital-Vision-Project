@@ -5,6 +5,7 @@ DOCSTRING
 """
 
 import cv2
+import json
 from KinectModule import HeadPose
 from KinectModule import KinectConnection
 
@@ -24,11 +25,6 @@ class Studio(object):
 				camera: The camera that should be installed
 		"""
 		self.cameras.append(camera)
-
-	def cameras(self):
-		"""Returns a list with all cameras in the studio
-		"""
-		return self.cameras
 
 	def newscaster(self):
 		"""
@@ -58,6 +54,9 @@ class ControlRoom(object):
 	def linkStudio(self, studio):
 		self.studio = studio
 
+	def studio(self):
+		return self.studio
+
 	def startCameras(self):
 		"""Start all cameras in the studio"""
 		for camera in self.studio.cameras:
@@ -72,7 +71,7 @@ class ControlRoom(object):
 class Camera(object):
 	"""docstring for Camera
 	"""
-	def __init__(self, cameraID, position):
+	def __init__(self, cameraID, position = None):
 		"""Constructor creating a new camera object
 
 			Args:
@@ -89,6 +88,13 @@ class Camera(object):
 		self.position = position
 		self.capObj = None
 
+	def toString(self):
+		""" Returns stringification of the camera object """
+		return str({"id": self.cameraID, "position": str(self.position)})
+
+	def getJsonObj(self):
+		return {"id": self.cameraID, "position": self.position.getStruct()}
+
 	def start(self):
 		"""Start this camera for capturing frames
 
@@ -100,10 +106,6 @@ class Camera(object):
 			return True
 		except Exception, e:
 			return False
-
-	def getPosition(self):
-		"""Returns this cameras position"""
-		return self.position
 
 	def setPosition(self, position):
 		"""Set the position of this camera"""
@@ -155,7 +157,7 @@ class Newscaster(object):
 		self.headpose = None
 		self.kinectConn = KinectConnection(url)
 		
-	def headpose(self):
+	def getHeadpose(self):
 		"""
 		"""
 		return self.setHeadpose(self.kinectConn.getPose())

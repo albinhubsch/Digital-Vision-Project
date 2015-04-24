@@ -6,12 +6,13 @@ DOCSTRING
 
 # Imports
 import requests
+import json
 
 class HeadPose(object):
 	"""Description of object goes here
 	"""
 
-	def __init__(self, hp_string):
+	def __init__(self, hp_string = None, X = None, Y = None, Z = None):
 		"""Constructor of a headpose datatype
 
 			Args:
@@ -23,24 +24,35 @@ class HeadPose(object):
 		"""
 		super(HeadPose, self).__init__()
 
-		try:
-			data = hp_string.split(',')
-			badArgument = 'Could not create head pose\nBad argument given: must be of format X:0,Y:0,Z:0\n'
+		if hp_string is None:
+			self.X = X
+			self.Y = Y
+			self.Z = Z
+		else:
+			try:
+				data = hp_string.split(',')
+				badArgument = 'Could not create head pose\nBad argument given: must be of format X:0,Y:0,Z:0\n'
 
-			if data[0].split(':')[0] is not 'X' or data[1].split(':')[0] is not 'Y' or data[2].split(':')[0] is not 'Z':
-				print badArgument
-				raise SystemExit
-			else:
-				self.X = int(data[0].split(':')[1])
-				self.Y = int(data[1].split(':')[1])
-				self.Z = int(data[2].split(':')[1])
-				self.Pitch = self.X
-				self.Yaw = self.Y
-				self.Roll = self.Z
+				if data[0].split(':')[0] is not 'X' or data[1].split(':')[0] is not 'Y' or data[2].split(':')[0] is not 'Z':
+					print badArgument
+					raise SystemExit
+				else:
+					self.X = int(data[0].split(':')[1])
+					self.Y = int(data[1].split(':')[1])
+					self.Z = int(data[2].split(':')[1])
 
-		except Exception, e:
-			raise ValueError
+			except Exception, e:
+				raise ValueError
 
+		self.Pitch = self.X
+		self.Yaw = self.Y
+		self.Roll = self.Z
+
+	def __str__(self):
+		return 'X:'+str(self.X)+',Y:'+str(self.Y)+',Z:'+str(self.Z)
+
+	def getStruct(self):
+		return {'X': self.Pitch, 'Y': self.Yaw, 'Z': self.Roll}
 
 class KinectConnection(object):
 	"""Description
