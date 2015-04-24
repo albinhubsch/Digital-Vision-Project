@@ -23,33 +23,47 @@ def main():
 	"""
 
 	# Run setup
-	e = Setup()
+	s = Setup()
+	controlRoom, studio, newscaster = s.beginSetup()
 
-	# n = HeadPose("X:20,Y:10,Z:32");
-
-	# # s = KinectConnection('http://localhost:8080')
-	# # print s.getPose().Roll
-	
-	# cam1 = Camera(0, n)
-	# cam1.start()
-	# cam1.setSize(320, 240)
+	# Create a window
+	cv2.namedWindow('Live', flags=cv2.WINDOW_OPENGL)
+	cv2.resizeWindow('Live', 720, 481)
+	cv2.moveWindow('Live', 240, 240)
 
 
-	# while(True):
-	#     # Capture frame-by-frame
-	#     frame = cam1.capture()
+	# Start cameras
+	controlRoom.startCameras()
+	controlRoom.setCameraSize()
 
-	#     # Our operations on the frame come here
-	#     # gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+	if len(controlRoom.studio.cameras) > 1:
+		pass
+		# while(True):
+			# Fetch headpose from newscaster
+			# pose = newscaster.getHeadpose()
 
-	#     # Display the resulting frame
-	#     cv2.imshow('frame',frame)
-	#     if cv2.waitKey(1) & 0xFF == ord('q'):
-	#         break
+			# Do camera decisions
+			
+			# frame = camera.capture()
+			# cv2.imshow('Live', frame)
+			# if cv2.waitKey(1) & 0xFF == ord('q'):
+			# 	break
 
-	# # When everything done, release the capture
-	# cam1.shutdown()
-	# cv2.destroyAllWindows()
+	elif len(controlRoom.studio.cameras) == 1:
+		while(True):
+			frame = controlRoom.studio.cameras[0].capture()
+			cv2.imshow('Live', frame)
+			
+			# Listen for ESC key, leave loop if pressed
+			k = cv2.waitKey(1) & 0xFF
+			if k == 27:
+				break
+	else:
+		print 'No cameras found! Something seems to be wrong...'
+
+	# Shutdown all cameras and kill all windows
+	controlRoom.shutdownCameras()
+	cv2.destroyAllWindows()
 
 if __name__ == "__main__":
 	main()

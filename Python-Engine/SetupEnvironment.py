@@ -18,9 +18,6 @@ class Setup(object):
 	def __init__(self):
 		super(Setup, self).__init__()
 
-		# 
-		self.beginSetup()
-
 	def beginSetup(self):
 		"""beginSetup
 		"""
@@ -29,8 +26,8 @@ class Setup(object):
 		choice = int(raw_input('Type your choice from the menu above: '))
 
 		if choice is 1:
-			jsonFile = str(raw_input('Type the name of the json file, include .json: '))
-			with open(jsonFile) as data_file:
+			jsonFile = str(raw_input('Type the name of the json file: '))
+			with open(jsonFile+'.json') as data_file:
 				data = json.load(data_file)
 
 			newscaster = Newscaster(data['Newscaster']['name'], data['Newscaster']['url'])

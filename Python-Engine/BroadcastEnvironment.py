@@ -67,6 +67,10 @@ class ControlRoom(object):
 		for camera in self.studio.cameras:
 			camera.shutdown()
 
+	def setCameraSize(self, width = 720, height = 481):
+		for camera in self.studio.cameras:
+			camera.setSize(width, height)
+
 
 class Camera(object):
 	"""docstring for Camera
