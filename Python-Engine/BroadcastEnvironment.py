@@ -52,10 +52,8 @@ class ControlRoom(object):
 		self.studio = studio
 
 	def linkStudio(self, studio):
+		""" """
 		self.studio = studio
-
-	def studio(self):
-		return self.studio
 
 	def startCameras(self):
 		"""Start all cameras in the studio"""
@@ -68,8 +66,21 @@ class ControlRoom(object):
 			camera.shutdown()
 
 	def setCameraSize(self, width = 720, height = 481):
+		""" """
 		for camera in self.studio.cameras:
 			camera.setSize(width, height)
+
+	def getChoosenCamera(self):
+		""" Get the choosen camera from the sudio 
+			The choosen camera is the one that the newscaster is currently facing
+
+			Returns:
+				Returns a camera object
+		"""
+		# Fetch current headpose of newscaster
+		headpose = self.studio.newscaster.getHeadpose()
+
+		
 
 
 class Camera(object):

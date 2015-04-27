@@ -38,16 +38,18 @@ def main():
 
 	if len(controlRoom.studio.cameras) > 1:
 		pass
-		# while(True):
+
+		while(True):
 			# Fetch headpose from newscaster
 			# pose = newscaster.getHeadpose()
 
-			# Do camera decisions
+			# Get camera based on pose
+			camera =  controlRoom.getChoosenCamera()
 			
-			# frame = camera.capture()
-			# cv2.imshow('Live', frame)
-			# if cv2.waitKey(1) & 0xFF == ord('q'):
-			# 	break
+			frame = camera.capture()
+			cv2.imshow('Live', frame)
+			if cv2.waitKey(1) & 0xFF == ord('q'):
+				break
 
 	elif len(controlRoom.studio.cameras) == 1:
 		while(True):
