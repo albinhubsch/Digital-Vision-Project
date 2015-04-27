@@ -6,6 +6,7 @@ DOCSTRING
 
 import cv2
 import json
+import math
 from KinectModule import HeadPose
 from KinectModule import KinectConnection
 
@@ -59,6 +60,7 @@ class ControlRoom(object):
 		"""Start all cameras in the studio"""
 		for camera in self.studio.cameras:
 			camera.start()
+			print 'camera ' + str(camera.cameraID) + ' started'
 
 	def shutdownCameras(self):
 		"""Shutdown all cameras in the studio"""
@@ -70,7 +72,7 @@ class ControlRoom(object):
 		for camera in self.studio.cameras:
 			camera.setSize(width, height)
 
-	def getChoosenCamera(self):
+	def getClosestCamera(self):
 		""" Get the choosen camera from the sudio 
 			The choosen camera is the one that the newscaster is currently facing
 
@@ -80,8 +82,26 @@ class ControlRoom(object):
 		# Fetch current headpose of newscaster
 		headpose = self.studio.newscaster.getHeadpose()
 
-		
+		# We need all cameras and their position
+		cameras = self.studio.cameras
 
+		# Find shortest euklidian distance to any camera position from the headpose
+		short_v = self.calculateDistanceToHeadpose(cameras[0])
+		close_cam = None
+		for camera in cameras:
+			v = self.calculateDistanceToHeadpose(camera)
+			if v < short_v:
+				short_v = v
+				close_cam = camera
+			elif v == short_v:
+				pass
+
+		# Return the closest camera
+		return close_cam
+
+	def calculateDistanceToHeadpose(self, camera):
+		headpose = self.studio.newscaster.getHeadpose()
+		return math.sqrt( (abs(camera.position.X - headpose.X))**2 + (abs(camera.position.Y - headpose.Y))**2 + (abs(camera.position.Z - headpose.Z))**2 )
 
 class Camera(object):
 	"""docstring for Camera
@@ -116,6 +136,7 @@ class Camera(object):
 			Returns:
 				True or False
 		"""
+		print 'Starting cam ' + str(self.cameraID)
 		try:
 			self.capObj = cv2.VideoCapture(self.cameraID)
 			return True

@@ -10,6 +10,7 @@ from SetupEnvironment import *
 
 import cv2
 import numpy as np
+import time
 
 def main():
 	"""Description of function goes here
@@ -34,22 +35,27 @@ def main():
 
 	# Start cameras
 	controlRoom.startCameras()
+	print 'Cameras started'
 	controlRoom.setCameraSize()
 
 	if len(controlRoom.studio.cameras) > 1:
-		pass
+		# pass
 
-		while(True):
+		while True:
+			time.sleep(3)
+			print 'varvning'
+
+		# while(True):
 			# Fetch headpose from newscaster
 			# pose = newscaster.getHeadpose()
 
 			# Get camera based on pose
-			camera =  controlRoom.getChoosenCamera()
+			# camera =  controlRoom.getClosestCamera()
 			
-			frame = camera.capture()
-			cv2.imshow('Live', frame)
-			if cv2.waitKey(1) & 0xFF == ord('q'):
-				break
+			# frame = camera.capture()
+			# cv2.imshow('Live', frame)
+			# if cv2.waitKey(1) & 0xFF == ord('q'):
+			# 	break
 
 	elif len(controlRoom.studio.cameras) == 1:
 		while(True):
