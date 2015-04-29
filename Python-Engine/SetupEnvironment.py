@@ -31,10 +31,12 @@ class Setup(object):
 			with open(jsonFile+'.json') as data_file:
 				data = json.load(data_file)
 
+			# ser = serial.Serial('/dev/cu.usbmodem1d11131', 9600)
+			ser = None
 			newscaster = Newscaster(data['Newscaster']['name'], data['Newscaster']['url'])
 			cameras = []
 			for camera in data['cameras']:
-				cameras.append(Camera(camera['id'], HeadPose(X=camera['position']['X'], Y=camera['position']['Y'], Z=camera['position']['Z'])))
+				cameras.append(Camera_E(camera['id'], HeadPose(X=camera['position']['X'], Y=camera['position']['Y'], Z=camera['position']['Z']), ser))
 			studio = Studio(cameras, newscaster)
 			controlRoom = ControlRoom(studio)
 
@@ -60,7 +62,7 @@ class Setup(object):
 			print '!! Building cameras...'
 			ser = serial.Serial('/dev/cu.usbmodem1d11131', 9600)
 			cameras = []
-			for i in xrange(number_of_cameras):
+			for i in xrange(10, 10 + number_of_cameras):
 				cameras.append(Camera_E(i, None, ser))
 			print '== Cameras built =='
 			print '!! Renovating studio...'

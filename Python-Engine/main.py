@@ -31,11 +31,6 @@ def main():
 	s = Setup()
 	controlRoom, studio, newscaster = s.beginSetup()
 
-	# Create a window
-	cv2.namedWindow('Live', flags=cv2.WINDOW_OPENGL)
-	cv2.resizeWindow('Live', 720, 481)
-	cv2.moveWindow('Live', 240, 240)
-
 
 	# Start cameras
 	controlRoom.startCameras()
@@ -43,33 +38,17 @@ def main():
 	controlRoom.setCameraSize()
 
 	if len(controlRoom.studio.cameras) > 1:
-		# pass
-
+		print 'Everything up and running...'
 		while True:
-			time.sleep(3)
-			print 'varvning'
-
-		# while(True):
-			# Fetch headpose from newscaster
-			# pose = newscaster.getHeadpose()
-
-			# Get camera based on pose
-			# camera =  controlRoom.getClosestCamera()
-			
-			# frame = camera.capture()
-			# cv2.imshow('Live', frame)
-			# if cv2.waitKey(1) & 0xFF == ord('q'):
-			# 	break
+			camera = controlRoom.getClosestCamera()
+			print camera.cameraID
+			# camera.capture()
+			time.sleep(0.05)
 
 	elif len(controlRoom.studio.cameras) == 1:
-		while(True):
-			frame = controlRoom.studio.cameras[0].capture()
-			cv2.imshow('Live', frame)
-			
-			# Listen for ESC key, leave loop if pressed
-			k = cv2.waitKey(1) & 0xFF
-			if k == 27:
-				break
+		while True:
+			controlRoom.studio.cameras[0].capture()
+			time.sleep(2)
 	else:
 		print 'No cameras found! Something seems to be wrong...'
 

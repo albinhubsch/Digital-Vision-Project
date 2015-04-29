@@ -91,11 +91,9 @@ class ControlRoom(object):
 		close_cam = None
 		for camera in cameras:
 			v = self.calculateDistanceToHeadpose(camera)
-			if v < short_v:
+			if v <= short_v:
 				short_v = v
 				close_cam = camera
-			elif v == short_v:
-				pass
 
 		# Return the closest camera
 		return close_cam
@@ -198,7 +196,7 @@ class Camera_E(object):
 		"""
 		super(Camera_E, self).__init__()
 
-		self.cameraID = cameraID + 10
+		self.cameraID = cameraID
 		self.position = position
 		self.capObj = None
 		self.serial_link = serial_link
