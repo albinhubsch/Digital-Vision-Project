@@ -6,6 +6,8 @@ DOCSTRING
 
 import cv2
 import json
+import math
+import serial
 from KinectModule import HeadPose
 from KinectModule import KinectConnection
 
@@ -59,6 +61,7 @@ class ControlRoom(object):
 		"""Start all cameras in the studio"""
 		for camera in self.studio.cameras:
 			camera.start()
+			print 'camera ' + str(camera.cameraID) + ' started'
 
 	def shutdownCameras(self):
 		"""Shutdown all cameras in the studio"""
@@ -70,7 +73,7 @@ class ControlRoom(object):
 		for camera in self.studio.cameras:
 			camera.setSize(width, height)
 
-	def getChoosenCamera(self):
+	def getClosestCamera(self):
 		""" Get the choosen camera from the sudio 
 			The choosen camera is the one that the newscaster is currently facing
 
@@ -80,8 +83,24 @@ class ControlRoom(object):
 		# Fetch current headpose of newscaster
 		headpose = self.studio.newscaster.getHeadpose()
 
-		
+		# We need all cameras and their position
+		cameras = self.studio.cameras
 
+		# Find shortest euklidian distance to any camera position from the headpose
+		short_v = self.calculateDistanceToHeadpose(cameras[0])
+		close_cam = None
+		for camera in cameras:
+			v = self.calculateDistanceToHeadpose(camera)
+			if v <= short_v:
+				short_v = v
+				close_cam = camera
+
+		# Return the closest camera
+		return close_cam
+
+	def calculateDistanceToHeadpose(self, camera):
+		headpose = self.studio.newscaster.getHeadpose()
+		return math.sqrt( (abs(camera.position.X - headpose.X))**2 + (abs(camera.position.Y - headpose.Y))**2 + (abs(camera.position.Z - headpose.Z))**2 )
 
 class Camera(object):
 	"""docstring for Camera
@@ -116,6 +135,7 @@ class Camera(object):
 			Returns:
 				True or False
 		"""
+		print 'Starting cam ' + str(self.cameraID)
 		try:
 			self.capObj = cv2.VideoCapture(self.cameraID)
 			return True
@@ -159,6 +179,74 @@ class Camera(object):
 		"""Release this camera from video capture
 		"""
 		self.capObj.release()
+
+class Camera_E(object):
+	"""This is the emulated camera for arduino
+	"""
+	def __init__(self, cameraID, position = None, serial_link = None):
+		"""Constructor creating a new camera object
+
+			Args:
+				cameraID: The ID for the camera connected to the computer
+				position: The position of the camera given in a HeadPose
+			Returns:
+				Returns a new camera object
+			Raises:
+				-
+		"""
+		super(Camera_E, self).__init__()
+
+		self.cameraID = cameraID
+		self.position = position
+		self.capObj = None
+		self.serial_link = serial_link
+
+	def toString(self):
+		""" Returns stringification of the camera object """
+		return str({"id": self.cameraID, "position": str(self.position)})
+
+	def getJsonObj(self):
+		return {"id": self.cameraID, "position": self.position.getStruct()}
+
+	def start(self):
+		"""Start this camera for capturing frames
+
+			Returns:
+				True or False
+		"""
+		pass
+
+	def setPosition(self, position):
+		"""Set the position of this camera"""
+		self.position = position
+
+	def updatePosition(self, position):
+		"""Update the position for this camera"""
+		self.setPosition(position)
+
+	def setSize(self, width, height):
+		"""Set the video capture size
+
+			Args:
+				width: The pixel width
+				height: The pixle height
+		"""
+		pass
+
+	def capture(self):
+		"""Captures a frame from this camera
+
+			Returns:
+				Returns a frash frame from the camera
+		"""
+		# print 'writing to arduino: '+str(self.cameraID)+','
+		self.serial_link.write(str(self.cameraID)+',')
+
+	def shutdown(self):
+		"""Release this camera from video capture
+		"""
+		pass
+		
 
 class Newscaster(object):
 	"""docstring for Newscaster
