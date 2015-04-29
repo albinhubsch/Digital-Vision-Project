@@ -1,24 +1,23 @@
-
+int camera_old = 0;
 int camera = 0;
 
 void setup() {
         Serial.begin(9600);
-        pinMode(13, OUTPUT);
+        for(int i = 10; i < 14; i++){
+            pinMode(i, OUTPUT);
+            digitalWrite(i, LOW);
+        }
 }
 
 void loop() {
-
-        // send data only when you receive data:
-        if (Serial.available() > 0) {
-                // read the incoming byte:
-                camera = Serial.read()-'0';
-
-                if (camera == 0){
-                    digitalWrite(13, LOW);
-                }else{
-                    digitalWrite(13, HIGH);
-                }
+        while (Serial.available() > 0){
+            camera = Serial.parseInt();
+            if (Serial.read() == '\n'){}
         }
         
-        //delay(10);
+        if (camera != camera_old){
+            digitalWrite(camera_old, LOW);
+            digitalWrite(camera, HIGH);
+            camera_old = camera;
+        }
 }

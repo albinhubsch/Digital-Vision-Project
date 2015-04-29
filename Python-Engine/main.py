@@ -8,6 +8,7 @@ from KinectModule import KinectConnection
 from BroadcastEnvironment import *
 from SetupEnvironment import *
 
+import serial
 import cv2
 import numpy as np
 import time
@@ -22,6 +23,9 @@ def main():
 		Raises:
 			Exception: Description of the exception that can be raised
 	"""
+
+	# Serial link for camera emulation
+	# serial_link = serial.Serial('COM5', 9600)
 
 	# Run setup
 	s = Setup()

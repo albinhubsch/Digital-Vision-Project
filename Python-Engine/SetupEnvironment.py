@@ -10,6 +10,7 @@ import json
 from BroadcastEnvironment import *
 from Tkinter import *
 import time
+import serial
 
 class Setup(object):
 	"""docstring for Setup
@@ -57,9 +58,10 @@ class Setup(object):
 			print '== Newscaster created =='
 
 			print '!! Building cameras...'
+			ser = serial.Serial('/dev/cu.usbmodem1d11131', 9600)
 			cameras = []
 			for i in xrange(number_of_cameras):
-				cameras.append(Camera(i, None))
+				cameras.append(Camera_E(i, None, ser))
 			print '== Cameras built =='
 			print '!! Renovating studio...'
 			studio = Studio(cameras, newscaster)
@@ -81,17 +83,11 @@ class Setup(object):
 				camera.start()
 				camera.setSize(320, 240)
 
-				print 'Look into this camera and press q when ready. Hold your head steady for 3 seconds while calibrating'
+				camera.capture()
+				time.sleep(0.2)
+				camera.capture()
 
-				while(True):
-					frame = camera.capture()
-					# Display the resulting frame
-					cv2.imshow('frame',frame)
-					if cv2.waitKey(1) & 0xFF == ord('q'):
-						break
-
-				camera.shutdown()
-				cv2.destroyAllWindows()
+				raw_input('Look into the camera that is on. press enter to start calibration')
 
 				print 'Calibrating...'
 

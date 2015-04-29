@@ -7,6 +7,7 @@ DOCSTRING
 import cv2
 import json
 import math
+import serial
 from KinectModule import HeadPose
 from KinectModule import KinectConnection
 
@@ -180,6 +181,74 @@ class Camera(object):
 		"""Release this camera from video capture
 		"""
 		self.capObj.release()
+
+class Camera_E(object):
+	"""This is the emulated camera for arduino
+	"""
+	def __init__(self, cameraID, position = None, serial_link = None):
+		"""Constructor creating a new camera object
+
+			Args:
+				cameraID: The ID for the camera connected to the computer
+				position: The position of the camera given in a HeadPose
+			Returns:
+				Returns a new camera object
+			Raises:
+				-
+		"""
+		super(Camera_E, self).__init__()
+
+		self.cameraID = cameraID + 10
+		self.position = position
+		self.capObj = None
+		self.serial_link = serial_link
+
+	def toString(self):
+		""" Returns stringification of the camera object """
+		return str({"id": self.cameraID, "position": str(self.position)})
+
+	def getJsonObj(self):
+		return {"id": self.cameraID, "position": self.position.getStruct()}
+
+	def start(self):
+		"""Start this camera for capturing frames
+
+			Returns:
+				True or False
+		"""
+		pass
+
+	def setPosition(self, position):
+		"""Set the position of this camera"""
+		self.position = position
+
+	def updatePosition(self, position):
+		"""Update the position for this camera"""
+		self.setPosition(position)
+
+	def setSize(self, width, height):
+		"""Set the video capture size
+
+			Args:
+				width: The pixel width
+				height: The pixle height
+		"""
+		pass
+
+	def capture(self):
+		"""Captures a frame from this camera
+
+			Returns:
+				Returns a frash frame from the camera
+		"""
+		# print 'writing to arduino: '+str(self.cameraID)+','
+		self.serial_link.write(str(self.cameraID)+',')
+
+	def shutdown(self):
+		"""Release this camera from video capture
+		"""
+		pass
+		
 
 class Newscaster(object):
 	"""docstring for Newscaster
