@@ -24,13 +24,9 @@ def main():
 			Exception: Description of the exception that can be raised
 	"""
 
-	# Serial link for camera emulation
-	# serial_link = serial.Serial('COM5', 9600)
-
 	# Run setup
 	s = Setup()
 	controlRoom, studio, newscaster = s.beginSetup()
-
 
 	# Start cameras
 	controlRoom.startCameras()
@@ -43,6 +39,8 @@ def main():
 			camera = controlRoom.getClosestCamera()
 			print camera.cameraID
 			# camera.capture()
+			
+			# Set program speed
 			time.sleep(0.05)
 
 	elif len(controlRoom.studio.cameras) == 1:
