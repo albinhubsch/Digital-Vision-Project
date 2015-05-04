@@ -1,10 +1,15 @@
 # -*- coding: utf-8 -*-
 
 """
-DOCSTRING
+	PROGRAM:
+		This program runs the setup process. This is used for calibrating cameras etc
+
+		The code should be quite straight forward to follow.
+
+	AUTHOR: albin.hubsch@gmail.com
+	UPDATED: 2015-05
 """
 
-import cv2
 import os
 import json
 from BroadcastEnvironment import *
@@ -32,7 +37,7 @@ class Setup(object):
 				data = json.load(data_file)
 
 			# ser = serial.Serial('/dev/cu.usbmodem1d11131', 9600)
-			ser = None
+			ser = serial.Serial('COM4', 9600)
 			newscaster = Newscaster(data['Newscaster']['name'], data['Newscaster']['url'])
 			cameras = []
 			for camera in data['cameras']:
@@ -60,7 +65,8 @@ class Setup(object):
 			print '== Newscaster created =='
 
 			print '!! Building cameras...'
-			ser = serial.Serial('/dev/cu.usbmodem1d11131', 9600)
+			# ser = serial.Serial('/dev/cu.usbmodem1d11131', 9600)
+			ser = serial.Serial('COM4', 9600)
 			cameras = []
 			for i in xrange(10, 10 + number_of_cameras):
 				cameras.append(Camera_E(i, None, ser))
