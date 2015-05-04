@@ -111,7 +111,7 @@ class ControlRoom(object):
 
 		# Find shortest euklidian distance to any camera position from the headpose
 		short_v = self.calculateDistanceToHeadpose(cameras[0].position)
-		close_cam = None
+		close_cam = cameras[0]
 		for camera in cameras:
 			v = self.calculateDistanceToHeadpose(camera.position)
 			if v <= short_v:

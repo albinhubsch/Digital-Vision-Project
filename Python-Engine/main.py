@@ -37,7 +37,7 @@ def main():
 		print 'Everything up and running...'
 		while True:
 			camera = controlRoom.getClosestCamera()
-			controlRoom.cameraSelectionADV()
+			# controlRoom.cameraSelectionADV()
 			print 'Active camera: ' + str(camera.cameraID)
 			camera.capture()
 			
