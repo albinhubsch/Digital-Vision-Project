@@ -1,27 +1,27 @@
 # -*- coding: utf-8 -*-
 
 """
-DOCSTRING
+	PROGRAM:
+		Python engine automated kinect camera selections
+
+		This program is a prototype and has the purpose of simulate automated camera selections
+		using a kinect and face tracking. This prototype is meant for tv-studios with multiple
+		stationary cameras.
+
+	AUTHOR: albin.hubsch@gmail.com
+	UPDATED: 2015-05
 """
 from KinectModule import HeadPose
 from KinectModule import KinectConnection
 from BroadcastEnvironment import *
 from SetupEnvironment import *
-
 import serial
-# import cv2
-# import numpy as np
 import time
 
 def main():
-	"""Description of function goes here
+	"""Main function
 
-		Args:
-			n: Argument description
-		Returns:
-			Description of the return value
-		Raises:
-			Exception: Description of the exception that can be raised
+		Starts the program loop and controlls all cameras
 	"""
 
 	# Run setup
@@ -35,9 +35,11 @@ def main():
 
 	if len(controlRoom.studio.cameras) > 1:
 		print 'Everything up and running...'
-		
+
+		# Fetch a camera that best matches the headpose angle
 		camera = controlRoom.getClosestCamera()
 		while True:
+			# If advance camera selection algo indicates true, fetch camera closest to headpose
 			if controlRoom.cameraSelectionADV():
 				camera = controlRoom.getClosestCamera()
 			print 'Active camera: ' + str(camera.cameraID)

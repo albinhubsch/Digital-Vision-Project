@@ -1,7 +1,12 @@
 # -*- coding: utf-8 -*-
 
 """
-DOCSTRING
+	KinectModule
+
+	File contains classes regarding Kinect connection and calculations.
+
+	AUTHOR: albin.hubsch@gmail.com
+	UPDATED: 2015-05
 """
 
 # Imports
@@ -9,7 +14,9 @@ import requests
 import json
 
 class HeadPose(object):
-	"""Description of object goes here
+	"""HeadPose 
+
+		represents a headpose, a point in 3D space.
 	"""
 
 	def __init__(self, hp_string = None, X = None, Y = None, Z = None):
@@ -49,13 +56,16 @@ class HeadPose(object):
 		self.Roll = self.Z
 
 	def __str__(self):
+		""" Return a str version of this point """
 		return 'X:'+str(self.X)+',Y:'+str(self.Y)+',Z:'+str(self.Z)
 
 	def getStruct(self):
+		""" Return this point as a python struct """
 		return {'X': self.Pitch, 'Y': self.Yaw, 'Z': self.Roll}
 
 class KinectConnection(object):
-	"""Description
+	"""KinectConnection class 
+		Fetch headpose from the kinect server
 	"""
 
 	def __init__(self, url):

@@ -1,10 +1,15 @@
 # -*- coding: utf-8 -*-
 
 """
-DOCSTRING
+	PROGRAM:
+		This program runs the setup process. This is used for calibrating cameras etc
+
+		The code should be quite straight forward to follow.
+
+	AUTHOR: albin.hubsch@gmail.com
+	UPDATED: 2015-05
 """
 
-# import cv2
 import os
 import json
 from BroadcastEnvironment import *

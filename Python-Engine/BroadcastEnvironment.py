@@ -1,10 +1,14 @@
 # -*- coding: utf-8 -*-
 
 """
-DOCSTRING
+	BroadcastEnvironment
+
+	File contains classes related to the control of cameras and headpose calculations
+
+	AUTHOR: albin.hubsch@gmail.com
+	UPDATED: 2015-05
 """
 
-# import cv2
 import json
 import math
 import serial
@@ -13,12 +17,13 @@ from KinectModule import KinectConnection
 from statistics import *
 
 class Studio(object):
-	"""docstring for Studio
+	"""
+		Class Studio, handles newscaster and cameras
 	"""
 	def __init__(self, cameras = [], newscaster = None):
 		super(Studio, self).__init__()
 
-		self.cameras = cameras #Allocate memory for cameras in studio
+		self.cameras = cameras
 		self.newscaster = newscaster
 
 	def installCamera(self, camera):
@@ -41,7 +46,8 @@ class Studio(object):
 
 
 class ControlRoom(object):
-	"""docstring for ControlRoom
+	"""
+		Class ControlRoom, handles camera control and position calculations
 	"""
 	
 	def __init__(self, studio = None):
@@ -49,13 +55,14 @@ class ControlRoom(object):
 		and also do the choice of which camera to choose
 
 			Args: 
-				asd
+				studio: the studio that this control room should control.
 		"""
 		super(ControlRoom, self).__init__()
 		self.studio = studio
 
 	def linkStudio(self, studio):
-		""" """
+		""" Link a studio if it was not linnked during __init__
+		"""
 		self.studio = studio
 
 	def startCameras(self):
@@ -70,7 +77,7 @@ class ControlRoom(object):
 			camera.shutdown()
 
 	def setCameraSize(self, width = 720, height = 481):
-		""" """
+		"""Set camera recording size, this was used with webcams"""
 		for camera in self.studio.cameras:
 			camera.setSize(width, height)
 
@@ -125,14 +132,16 @@ class ControlRoom(object):
 		return close_cam
 
 	def calculateDistanceToHeadpose(self, position):
+		""" Calculate the distance from a point to the current headpose of the newscaster in 3D space """
 		headpose = self.studio.newscaster.getHeadpose()
-		return math.sqrt( (abs(position.X - headpose.X))**2 + (abs(position.Y - headpose.Y))**2 + (abs(position.Z - headpose.Z))**2 )
+		return self.calculateDistanceBetween2Headpose(position, headpose)
 
 	def calculateDistanceBetween2Headpose(headpose1, headpose2):
+		""" Calculate the distance between two points in 3D space """
 		return math.sqrt( (abs(headpose1.X - headpose2.X))**2 + (abs(headpose1.Y - headpose2.Y))**2 + (abs(headpose1.Z - headpose2.Z))**2 )
 
 class Camera(object):
-	"""docstring for Camera
+	"""Class Camera, the name says it all. This represents a camera
 	"""
 	def __init__(self, cameraID, position = None):
 		"""Constructor creating a new camera object
@@ -156,6 +165,7 @@ class Camera(object):
 		return str({"id": self.cameraID, "position": str(self.position)})
 
 	def getJsonObj(self):
+		""" Returns a json representation of the camera """
 		return {"id": self.cameraID, "position": self.position.getStruct()}
 
 	def start(self):
@@ -235,6 +245,7 @@ class Camera_E(object):
 		return str({"id": self.cameraID, "position": str(self.position)})
 
 	def getJsonObj(self):
+		""" Returns a json representation of the camera """
 		return {"id": self.cameraID, "position": self.position.getStruct()}
 
 	def start(self):
@@ -278,12 +289,11 @@ class Camera_E(object):
 		
 
 class Newscaster(object):
-	"""docstring for Newscaster
+	"""Class Newscaster, this represents a newscaster
 	"""
 
 	def __init__(self, name, url):
-		"""
-		"""
+		""" Constructor """
 		super(Newscaster, self).__init__()
 
 		self.name = name
@@ -292,20 +302,17 @@ class Newscaster(object):
 		self.history = []
 		
 	def getHeadpose(self):
-		"""
-		"""
+		""" Get the latest headpose for this newscaster """
 		return self.setHeadpose(self.kinectConn.getPose())
 
 	def setHeadpose(self, headpose):
-		"""
-		"""
+		""" Set the headpose """
 		self.addToHistory(headpose)
 		self.headpose = headpose
 		return self.headpose
 
 	def addToHistory(self, headpose):
-		""" 
-		"""
+		""" Add to headpose history to keep a record of the movement """
 		if len(self.history) < 120:
 			self.history.insert(0, headpose)
 		else:
