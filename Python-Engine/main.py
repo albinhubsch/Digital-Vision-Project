@@ -36,8 +36,9 @@ def main():
 	if len(controlRoom.studio.cameras) > 1:
 		print 'Everything up and running...'
 		while True:
-			camera = controlRoom.getClosestCamera()
-			controlRoom.cameraSelectionADV()
+			# camera = controlRoom.getClosestCamera()
+			if controlRoom.cameraSelectionADV():
+				camera = controlRoom.getClosestCamera()
 			print 'Active camera: ' + str(camera.cameraID)
 			camera.capture()
 			

@@ -91,7 +91,12 @@ class ControlRoom(object):
 		for point in history:
 			dist_list.insert(0, self.calculateDistanceToHeadpose(point))
 		
-		print 'stdev: ' + str(stdev(dist_list))
+		# print 'stdev: ' + str(stdev(dist_list))
+
+		if stdev(dist_list) < 12:
+			return True
+		else:
+			return False
 
 		# print stdev(dist_list)
 
