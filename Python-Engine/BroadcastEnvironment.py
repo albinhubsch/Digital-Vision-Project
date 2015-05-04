@@ -91,8 +91,8 @@ class ControlRoom(object):
 		for point in history:
 			dist_list.insert(0, self.calculateDistanceToHeadpose(point))
 		
-		with open('stdev_record.json', 'w') as outfile:
-			json.dump(stdev(dist_list), outfile)
+		with open('stdev_record.json', 'a') as outfile:
+			outfile.write(str(stdev(dist_list))+'\n')
 
 		# print stdev(dist_list)
 
