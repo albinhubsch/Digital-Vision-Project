@@ -35,16 +35,15 @@ def main():
 
 	if len(controlRoom.studio.cameras) > 1:
 		print 'Everything up and running...'
+		
 		camera = controlRoom.getClosestCamera()
 		while True:
-			# camera = controlRoom.getClosestCamera()
 			if controlRoom.cameraSelectionADV():
 				camera = controlRoom.getClosestCamera()
 			print 'Active camera: ' + str(camera.cameraID)
-			camera.capture()
 			
-			# Set program speed
-			time.sleep(0.01)
+			# Capture frame or in simulation mode, light up led
+			camera.capture()
 
 	elif len(controlRoom.studio.cameras) == 1:
 		while True:

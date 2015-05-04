@@ -78,11 +78,11 @@ class ControlRoom(object):
 		""" Camera selection advanced edition
 
 			Returns: 
-				Returns a camera object that should be used for capturing
+				Returns a camera object that should be used for capturing8
 		"""
 
 		# Calculate standard deviation from the 20 latest headposes
-		num = 10
+		num = 5
 		
 		history = self.studio.newscaster.history[:num]
 
@@ -90,8 +90,6 @@ class ControlRoom(object):
 		dist_list = []
 		for point in history:
 			dist_list.insert(0, self.calculateDistanceToHeadpose(point))
-		
-		# print 'stdev: ' + str(stdev(dist_list))
 
 		try:
 			if stdev(dist_list) < 12:
@@ -100,8 +98,6 @@ class ControlRoom(object):
 				return False
 		except Exception, e:
 			return False
-
-		# print stdev(dist_list)
 
 	def getClosestCamera(self):
 		""" Get the choosen camera from the sudio 
