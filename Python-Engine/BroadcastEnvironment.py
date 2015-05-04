@@ -93,9 +93,12 @@ class ControlRoom(object):
 		
 		# print 'stdev: ' + str(stdev(dist_list))
 
-		if stdev(dist_list) < 12:
-			return True
-		else:
+		try:
+			if stdev(dist_list) < 12:
+				return True
+			else:
+				return False
+		except Exception, e:
 			return False
 
 		# print stdev(dist_list)
