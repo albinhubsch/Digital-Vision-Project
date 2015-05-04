@@ -37,12 +37,12 @@ def main():
 		print 'Everything up and running...'
 		while True:
 			camera = controlRoom.getClosestCamera()
-			# controlRoom.cameraSelectionADV()
+			controlRoom.cameraSelectionADV()
 			print 'Active camera: ' + str(camera.cameraID)
 			camera.capture()
 			
 			# Set program speed
-			time.sleep(0.05)
+			time.sleep(0.01)
 
 	elif len(controlRoom.studio.cameras) == 1:
 		while True:

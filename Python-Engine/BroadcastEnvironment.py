@@ -82,7 +82,7 @@ class ControlRoom(object):
 		"""
 
 		# Calculate standard deviation from the 20 latest headposes
-		num = 20
+		num = 10
 		
 		history = self.studio.newscaster.history[:num]
 
@@ -91,8 +91,7 @@ class ControlRoom(object):
 		for point in history:
 			dist_list.insert(0, self.calculateDistanceToHeadpose(point))
 		
-		with open('stdev_record.json', 'a') as outfile:
-			outfile.write(str(stdev(dist_list))+'\n')
+		print 'stdev: ' + str(stdev(dist_list))
 
 		# print stdev(dist_list)
 
