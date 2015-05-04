@@ -4,12 +4,13 @@
 DOCSTRING
 """
 
-import cv2
+# import cv2
 import json
 import math
 import serial
 from KinectModule import HeadPose
 from KinectModule import KinectConnection
+from statistics import *
 
 class Studio(object):
 	"""docstring for Studio
@@ -73,6 +74,28 @@ class ControlRoom(object):
 		for camera in self.studio.cameras:
 			camera.setSize(width, height)
 
+	def cameraSelectionADV(self):
+		""" Camera selection advanced edition
+
+			Returns: 
+				Returns a camera object that should be used for capturing
+		"""
+
+		# Calculate standard deviation from the 20 latest headposes
+		num = 20
+		
+		history = self.studio.newscaster.history[:num]
+
+		# need to calculate the distance between all points in 3D space
+		dist_list = []
+		for point in history:
+			dist_list.insert(0, self.calculateDistanceToHeadpose(point))
+		
+		with open('stdev_record.json', 'w') as outfile:
+			json.dump(stdev(dist_list), outfile)
+
+		# print stdev(dist_list)
+
 	def getClosestCamera(self):
 		""" Get the choosen camera from the sudio 
 			The choosen camera is the one that the newscaster is currently facing
@@ -87,10 +110,10 @@ class ControlRoom(object):
 		cameras = self.studio.cameras
 
 		# Find shortest euklidian distance to any camera position from the headpose
-		short_v = self.calculateDistanceToHeadpose(cameras[0])
+		short_v = self.calculateDistanceToHeadpose(cameras[0].position)
 		close_cam = None
 		for camera in cameras:
-			v = self.calculateDistanceToHeadpose(camera)
+			v = self.calculateDistanceToHeadpose(camera.position)
 			if v <= short_v:
 				short_v = v
 				close_cam = camera
@@ -98,9 +121,12 @@ class ControlRoom(object):
 		# Return the closest camera
 		return close_cam
 
-	def calculateDistanceToHeadpose(self, camera):
+	def calculateDistanceToHeadpose(self, position):
 		headpose = self.studio.newscaster.getHeadpose()
-		return math.sqrt( (abs(camera.position.X - headpose.X))**2 + (abs(camera.position.Y - headpose.Y))**2 + (abs(camera.position.Z - headpose.Z))**2 )
+		return math.sqrt( (abs(position.X - headpose.X))**2 + (abs(position.Y - headpose.Y))**2 + (abs(position.Z - headpose.Z))**2 )
+
+	def calculateDistanceBetween2Headpose(headpose1, headpose2):
+		return math.sqrt( (abs(headpose1.X - headpose2.X))**2 + (abs(headpose1.Y - headpose2.Y))**2 + (abs(headpose1.Z - headpose2.Z))**2 )
 
 class Camera(object):
 	"""docstring for Camera
@@ -137,7 +163,7 @@ class Camera(object):
 		"""
 		print 'Starting cam ' + str(self.cameraID)
 		try:
-			self.capObj = cv2.VideoCapture(self.cameraID)
+			# self.capObj = cv2.VideoCapture(self.cameraID)
 			return True
 		except Exception, e:
 			return False
@@ -256,9 +282,11 @@ class Newscaster(object):
 		"""
 		"""
 		super(Newscaster, self).__init__()
+
 		self.name = name
 		self.headpose = None
 		self.kinectConn = KinectConnection(url)
+		self.history = []
 		
 	def getHeadpose(self):
 		"""
@@ -268,5 +296,15 @@ class Newscaster(object):
 	def setHeadpose(self, headpose):
 		"""
 		"""
+		self.addToHistory(headpose)
 		self.headpose = headpose
 		return self.headpose
+
+	def addToHistory(self, headpose):
+		""" 
+		"""
+		if len(self.history) < 120:
+			self.history.insert(0, headpose)
+		else:
+			self.history.pop()
+			self.addToHistory(headpose)

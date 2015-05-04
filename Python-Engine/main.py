@@ -9,8 +9,8 @@ from BroadcastEnvironment import *
 from SetupEnvironment import *
 
 import serial
-import cv2
-import numpy as np
+# import cv2
+# import numpy as np
 import time
 
 def main():
@@ -37,8 +37,9 @@ def main():
 		print 'Everything up and running...'
 		while True:
 			camera = controlRoom.getClosestCamera()
-			print camera.cameraID
-			# camera.capture()
+			controlRoom.cameraSelectionADV()
+			print 'Active camera: ' + str(camera.cameraID)
+			camera.capture()
 			
 			# Set program speed
 			time.sleep(0.05)
@@ -52,7 +53,6 @@ def main():
 
 	# Shutdown all cameras and kill all windows
 	controlRoom.shutdownCameras()
-	cv2.destroyAllWindows()
 
 if __name__ == "__main__":
 	main()
