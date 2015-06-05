@@ -7,7 +7,7 @@
 		The code should be quite straight forward to follow.
 
 	AUTHOR: albin.hubsch@gmail.com
-	UPDATED: 2015-05
+	UPDATED: 2015-06
 """
 
 import os
@@ -27,17 +27,27 @@ class Setup(object):
 	def beginSetup(self):
 		"""beginSetup
 		"""
+
+		# 
+		# !!! CHANGE ARDUINO PORT HERE !!!
+		# 
+		ARDUINO_PORT = 'COM4'
+
+
+
 		cl()
 		print 'Menu\n1. Load Broadcast Environment from a json file\n2. Create a new configuration and camera calibration\n'
 		choice = int(raw_input('Type your choice from the menu above: '))
 
+		# CHECK MENU SELECTION, LOAD FILE OR CREATE NEW CONFIGURATION
 		if choice is 1:
 			jsonFile = str(raw_input('Type the name of the json file: '))
 			with open(jsonFile+'.json') as data_file:
 				data = json.load(data_file)
 
 			# ser = serial.Serial('/dev/cu.usbmodem1d11131', 9600)
-			ser = serial.Serial('COM4', 9600)
+			ser = serial.Serial(ARDUINO_PORT, 9600)
+
 			newscaster = Newscaster(data['Newscaster']['name'], data['Newscaster']['url'])
 			cameras = []
 			for camera in data['cameras']:
@@ -65,8 +75,10 @@ class Setup(object):
 			print '== Newscaster created =='
 
 			print '!! Building cameras...'
+
 			# ser = serial.Serial('/dev/cu.usbmodem1d11131', 9600)
-			ser = serial.Serial('COM4', 9600)
+			ser = serial.Serial(ARDUINO_PORT, 9600)
+
 			cameras = []
 			for i in xrange(10, 10 + number_of_cameras):
 				cameras.append(Camera_E(i, None, ser))

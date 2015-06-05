@@ -1,7 +1,7 @@
 """
 	Statistics
 
-	Funstions for some simple statistical calculations
+	Functions for some simple statistical calculations
 
 	AUTHOR: albin.hubsch@gmail.com
 	UPDATED: 2015-05

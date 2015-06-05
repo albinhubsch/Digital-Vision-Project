@@ -39,7 +39,9 @@ def main():
 		# Fetch a camera that best matches the headpose angle
 		camera = controlRoom.getClosestCamera()
 		while True:
-			camera = controlRoom.getClosestCamera()
+			# If advance camera selection algo indicates true, fetch camera closest to headpose
+			if controlRoom.cameraSelectionADV():
+				camera = controlRoom.getClosestCamera()
 			print 'Active camera: ' + str(camera.cameraID)
 			
 			# Capture frame or in simulation mode, light up led

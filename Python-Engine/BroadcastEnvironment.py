@@ -6,7 +6,7 @@
 	File contains classes related to the control of cameras and headpose calculations
 
 	AUTHOR: albin.hubsch@gmail.com
-	UPDATED: 2015-05
+	UPDATED: 2015-06
 """
 
 import json
@@ -89,7 +89,7 @@ class ControlRoom(object):
 		"""
 
 		# Calculate standard deviation from the 20 latest headposes
-		num = 5
+		num = 20
 		
 		history = self.studio.newscaster.history[:num]
 
@@ -99,7 +99,7 @@ class ControlRoom(object):
 			dist_list.insert(0, self.calculateDistanceToHeadpose(point))
 
 		try:
-			if stdev(dist_list) < 12:
+			if stdev(dist_list) < 1.6:
 				return True
 			else:
 				return False
@@ -136,7 +136,7 @@ class ControlRoom(object):
 		headpose = self.studio.newscaster.getHeadpose()
 		return self.calculateDistanceBetween2Headpose(position, headpose)
 
-	def calculateDistanceBetween2Headpose(headpose1, headpose2):
+	def calculateDistanceBetween2Headpose(self, headpose1, headpose2):
 		""" Calculate the distance between two points in 3D space """
 		return math.sqrt( (abs(headpose1.X - headpose2.X))**2 + (abs(headpose1.Y - headpose2.Y))**2 + (abs(headpose1.Z - headpose2.Z))**2 )
 
